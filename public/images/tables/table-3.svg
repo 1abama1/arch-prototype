@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1F2" />
+      <stop offset="60%" stop-color="#FFE4E6" />
+      <stop offset="100%" stop-color="#FECDD3" />
+    </linearGradient>
+    <linearGradient id="brickWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4C0519" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+    <linearGradient id="wineColor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BE123C" />
+      <stop offset="100%" stop-color="#4C0519" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4C0519" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" rx="24" fill="url(#bg3)" />
+
+  <!-- Vaulted Cellar Brick Wall Backing -->
+  <path d="M 40 40 L 760 40 L 760 300 Q 400 240 40 300 Z" fill="url(#brickWall)" />
+
+  <!-- Wine Barrel & Rack Silhouettes on Wall -->
+  <rect x="70" y="70" width="160" height="180" rx="8" fill="#1F040C" stroke="#9F1239" stroke-width="2" />
+  <!-- Bottles on Left Rack -->
+  <circle cx="100" cy="100" r="12" fill="#881337" />
+  <circle cx="140" cy="100" r="12" fill="#BE123C" />
+  <circle cx="180" cy="100" r="12" fill="#E11D48" />
+  <circle cx="100" cy="140" r="12" fill="#BE123C" />
+  <circle cx="140" cy="140" r="12" fill="#9F1239" />
+  <circle cx="180" cy="140" r="12" fill="#881337" />
+  <circle cx="100" cy="180" r="12" fill="#E11D48" />
+  <circle cx="140" cy="180" r="12" fill="#BE123C" />
+  <circle cx="180" cy="180" r="12" fill="#9F1239" />
+
+  <!-- Right Side Wine Rack -->
+  <rect x="570" y="70" width="160" height="180" rx="8" fill="#1F040C" stroke="#9F1239" stroke-width="2" />
+  <circle cx="600" cy="100" r="12" fill="#881337" />
+  <circle cx="640" cy="100" r="12" fill="#BE123C" />
+  <circle cx="680" cy="100" r="12" fill="#E11D48" />
+  <circle cx="600" cy="140" r="12" fill="#E11D48" />
+  <circle cx="640" cy="140" r="12" fill="#9F1239" />
+  <circle cx="680" cy="140" r="12" fill="#881337" />
+  <circle cx="600" cy="180" r="12" fill="#BE123C" />
+  <circle cx="640" cy="180" r="12" fill="#881337" />
+  <circle cx="680" cy="180" r="12" fill="#BE123C" />
+
+  <!-- Central Sommelier Vault Arch -->
+  <path d="M 280 260 L 280 120 C 280 60 520 60 520 120 L 520 260 Z" fill="#2B0512" stroke="#BE123C" stroke-width="2" />
+  <text x="400" y="125" font-family="serif" font-size="16" letter-spacing="3" fill="#FDA4AF" text-anchor="middle">GRAND CRU RESERVE</text>
+
+  <!-- Cellar Cobblestone Floor -->
+  <polygon points="0,290 800,290 800,500 0,500" fill="#E2E8F0" opacity="0.6" />
+  <!-- Ambient Candle Glow on Table -->
+  <ellipse cx="400" cy="400" rx="300" ry="85" fill="#881337" opacity="0.1" />
+
+  <!-- Wine Tasting Oak Barrel / Table -->
+  <ellipse cx="400" cy="470" rx="140" ry="25" fill="#1C1917" opacity="0.3" />
+  <!-- Barrel body -->
+  <path d="M 290 350 C 275 400 280 430 300 460 L 500 460 C 520 430 525 400 510 350 Z" fill="#881337" />
+  <!-- Steel Barrel Hoops -->
+  <path d="M 285 390 Q 400 420 515 390" stroke="#F43F5E" stroke-width="4" fill="none" opacity="0.7" />
+  <path d="M 295 440 Q 400 465 505 440" stroke="#F43F5E" stroke-width="4" fill="none" opacity="0.7" />
+
+  <!-- Barrel Top / Table Surface -->
+  <ellipse cx="400" cy="350" rx="145" ry="50" fill="#9F1239" filter="url(#shadow3)" />
+  <ellipse cx="400" cy="348" rx="135" ry="42" fill="#BE123C" />
+  <ellipse cx="400" cy="345" rx="120" ry="34" fill="#E11D48" opacity="0.25" stroke="#FDA4AF" stroke-width="1.5" />
+
+  <!-- Candle in Glass Holder -->
+  <rect x="390" y="300" width="20" height="28" rx="3" fill="#FFFFFF" opacity="0.6" stroke="#FDA4AF" stroke-width="1" />
+  <ellipse cx="400" cy="290" rx="6" ry="12" fill="#FDE047" opacity="0.9" />
+  <circle cx="400" cy="290" r="16" fill="#FDE047" opacity="0.25" />
+
+  <!-- Wine Decanter with Rich Wine -->
+  <path d="M 325 335 L 332 290 L 340 290 L 347 335 Z" fill="#FDA4AF" opacity="0.5" />
+  <ellipse cx="336" cy="335" rx="22" ry="10" fill="url(#wineColor)" />
+
+  <!-- Crystal Goblet with Red Wine -->
+  <path d="M 455 315 C 455 335 475 335 475 315 Z" fill="#BE123C" />
+  <path d="M 453 310 C 453 340 477 340 477 310 Z" fill="#FFFFFF" opacity="0.3" stroke="#FDA4AF" stroke-width="1" />
+  <line x1="465" y1="340" x2="465" y2="355" stroke="#FDA4AF" stroke-width="3" stroke-linecap="round" />
+  <ellipse cx="465" cy="355" rx="10" ry="3" fill="#FDA4AF" />
+
+  <!-- Cheese Board with Grapes -->
+  <ellipse cx="365" cy="355" rx="25" ry="12" fill="#B45309" />
+  <polygon points="355,355 375,348 370,360" fill="#FDE047" />
+  <circle cx="378" cy="352" r="4" fill="#881337" />
+  <circle cx="384" cy="355" r="4" fill="#881337" />
+  <circle cx="381" cy="358" r="4" fill="#881337" />
+
+  <!-- Table Badge Pill -->
+  <g transform="translate(320, 20)">
+    <rect width="160" height="38" rx="19" fill="#4C0519" filter="url(#shadow3)" />
+    <circle cx="22" cy="19" r="10" fill="#FB7185" />
+    <text x="22" y="24" font-family="sans-serif" font-size="12" font-weight="bold" fill="#4C0519" text-anchor="middle">3</text>
+    <text x="92" y="24" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFF1F2" text-anchor="middle">СТОЛИК №3</text>
+  </g>
+</svg>
