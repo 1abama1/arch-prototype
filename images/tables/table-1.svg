@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECFDF5" />
+      <stop offset="60%" stop-color="#D1FAE5" />
+      <stop offset="100%" stop-color="#A7F3D0" />
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#E0F2FE" />
+    </linearGradient>
+    <linearGradient id="mountains" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748B" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#94A3B8" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="terraceFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#064E3B" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" rx="24" fill="url(#bg1)" />
+
+  <!-- Distant Sky & Mountain View -->
+  <path d="M 60 80 Q 200 60 400 80 T 740 70 L 740 260 L 60 260 Z" fill="url(#sky)" opacity="0.7" rx="16" />
+  <!-- Mountains -->
+  <polygon points="100,260 220,130 310,210 430,110 570,230 680,140 740,260 60,260" fill="url(#mountains)" />
+  <polygon points="220,130 250,165 200,165" fill="#FFFFFF" opacity="0.8" />
+  <polygon points="430,110 460,150 410,150" fill="#FFFFFF" opacity="0.8" />
+  <polygon points="680,140 700,170 665,170" fill="#FFFFFF" opacity="0.8" />
+
+  <!-- Terrace Glass Railing -->
+  <rect x="60" y="240" width="680" height="40" fill="#FFFFFF" opacity="0.4" rx="4" />
+  <line x1="60" y1="240" x2="740" y2="240" stroke="#059669" stroke-width="4" opacity="0.7" />
+  <line x1="200" y1="240" x2="200" y2="280" stroke="#059669" stroke-width="2" opacity="0.5" />
+  <line x1="380" y1="240" x2="380" y2="280" stroke="#059669" stroke-width="2" opacity="0.5" />
+  <line x1="560" y1="240" x2="560" y2="280" stroke="#059669" stroke-width="2" opacity="0.5" />
+
+  <!-- Terrace Floor -->
+  <polygon points="0,270 800,270 800,500 0,500" fill="url(#terraceFloor)" />
+  <!-- Deck plank lines -->
+  <line x1="0" y1="320" x2="800" y2="320" stroke="#94A3B8" stroke-width="1.5" opacity="0.4" />
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#94A3B8" stroke-width="1.5" opacity="0.4" />
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#94A3B8" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Pergola / Canopy beams overhead -->
+  <rect x="80" y="20" width="24" height="260" rx="4" fill="#047857" opacity="0.85" />
+  <rect x="700" y="20" width="24" height="260" rx="4" fill="#047857" opacity="0.85" />
+  <rect x="40" y="20" width="720" height="16" rx="6" fill="#065F46" />
+  <!-- Hanging lights -->
+  <circle cx="250" cy="70" r="12" fill="#FDE047" opacity="0.9" />
+  <line x1="250" y1="20" x2="250" y2="58" stroke="#334155" stroke-width="2" />
+  <circle cx="400" cy="80" r="14" fill="#FDE047" opacity="0.9" />
+  <line x1="400" y1="20" x2="400" y2="66" stroke="#334155" stroke-width="2" />
+  <circle cx="550" cy="70" r="12" fill="#FDE047" opacity="0.9" />
+  <line x1="550" y1="20" x2="550" y2="58" stroke="#334155" stroke-width="2" />
+
+  <!-- Botanical Plants in Pots on Terrace -->
+  <ellipse cx="140" cy="410" rx="36" ry="12" fill="#64748B" opacity="0.3" />
+  <path d="M 115 410 L 125 340 L 155 340 L 165 410 Z" fill="#D97706" />
+  <path d="M 140 340 C 100 300 90 230 130 200 C 150 240 145 280 140 340 Z" fill="#059669" />
+  <path d="M 140 340 C 180 290 200 220 160 190 C 140 230 145 280 140 340 Z" fill="#10B981" />
+  <path d="M 140 340 C 120 270 140 220 140 180 C 150 220 150 270 140 340 Z" fill="#34D399" />
+
+  <!-- Center Dining Table with Tablecloth -->
+  <ellipse cx="400" cy="460" rx="160" ry="24" fill="#334155" opacity="0.18" />
+  <!-- Table Legs -->
+  <rect x="392" y="360" width="16" height="90" rx="4" fill="#0F172A" />
+  <ellipse cx="400" cy="450" rx="40" ry="8" fill="#0F172A" />
+  <!-- Table Top Round / Drape -->
+  <ellipse cx="400" cy="360" rx="150" ry="55" fill="#FFFFFF" filter="url(#shadow1)" />
+  <ellipse cx="400" cy="358" rx="138" ry="46" fill="#F8FAFC" />
+  <ellipse cx="400" cy="356" rx="128" ry="38" stroke="#E2E8F0" stroke-width="2" fill="none" />
+
+  <!-- Table Service: Vase with flowers, Wine Glasses, Cutlery -->
+  <!-- Flower Vase -->
+  <path d="M 390 350 L 392 315 L 408 315 L 410 350 Z" fill="#059669" opacity="0.8" rx="4" />
+  <circle cx="395" cy="295" r="10" fill="#F43F5E" />
+  <circle cx="410" cy="290" r="12" fill="#FB923C" />
+  <circle cx="400" cy="280" r="9" fill="#FBBF24" />
+
+  <!-- Wine Glasses -->
+  <path d="M 330 330 C 330 345 342 345 342 330 Z" fill="#93C5FD" opacity="0.8" />
+  <line x1="336" y1="345" x2="336" y2="358" stroke="#64748B" stroke-width="2" />
+  <ellipse cx="336" cy="358" rx="6" ry="2" fill="#64748B" />
+
+  <path d="M 465 330 C 465 345 477 345 477 330 Z" fill="#93C5FD" opacity="0.8" />
+  <line x1="471" y1="345" x2="471" y2="358" stroke="#64748B" stroke-width="2" />
+  <ellipse cx="471" cy="358" rx="6" ry="2" fill="#64748B" />
+
+  <!-- Chairs on Left & Right -->
+  <!-- Left modern wicker chair -->
+  <path d="M 230 310 C 230 270 280 270 280 320 L 280 390 L 230 390 Z" fill="#047857" opacity="0.25" />
+  <rect x="235" y="360" width="45" height="10" rx="4" fill="#065F46" />
+  <line x1="240" y1="370" x2="235" y2="430" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+  <line x1="275" y1="370" x2="280" y2="430" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Right modern wicker chair -->
+  <path d="M 520 320 C 520 270 570 270 570 310 L 570 390 L 520 390 Z" fill="#047857" opacity="0.25" />
+  <rect x="520" y="360" width="45" height="10" rx="4" fill="#065F46" />
+  <line x1="525" y1="370" x2="520" y2="430" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+  <line x1="560" y1="370" x2="565" y2="430" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Table Badge Pill -->
+  <g transform="translate(320, 30)">
+    <rect width="160" height="38" rx="19" fill="#065F46" filter="url(#shadow1)" />
+    <circle cx="22" cy="19" r="10" fill="#34D399" />
+    <text x="22" y="24" font-family="sans-serif" font-size="12" font-weight="bold" fill="#064E3B" text-anchor="middle">1</text>
+    <text x="92" y="24" font-family="sans-serif" font-size="13" font-weight="700" fill="#ECFDF5" text-anchor="middle">СТОЛИК №1</text>
+  </g>
+</svg>
